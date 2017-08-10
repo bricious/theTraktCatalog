@@ -1,0 +1,6 @@
+framework module Pods_The_Trakt_CatalogTests {
+  umbrella header "Pods-The Trakt CatalogTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

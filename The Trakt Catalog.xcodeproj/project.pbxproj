@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AEC2220DF2488FF25BCB33A /* Pods_The_Trakt_Catalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0642E1857FA7901BD0808BA1 /* Pods_The_Trakt_Catalog.framework */; };
+		7FF89F3D1F3A8CBF00DABB8C /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF89F3C1F3A8CBF00DABB8C /* ListCollectionViewCell.swift */; };
+		7FF89F3F1F3A90E100DABB8C /* CollectionDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF89F3E1F3A90E100DABB8C /* CollectionDetailsObject.swift */; };
+		ADFA5A96A5BDE523B260C118 /* Pods_The_Trakt_CatalogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A73C514E873FF96B038543 /* Pods_The_Trakt_CatalogUITests.framework */; };
+		E228671717CBBA92CCB093FB /* Pods_The_Trakt_CatalogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51C177FDC499B1781A40D03 /* Pods_The_Trakt_CatalogTests.framework */; };
+		F9D3A9771F39FFB0000F4BFE /* ListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3A9761F39FFB0000F4BFE /* ListObject.swift */; };
+		F9D3A97B1F3A2301000F4BFE /* ListDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3A97A1F3A2301000F4BFE /* ListDetailsObject.swift */; };
+		F9D3A97D1F3A5526000F4BFE /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3A97C1F3A5526000F4BFE /* DetailsMovieViewController.swift */; };
+		F9D5C8A21F38D4B1005571C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5C8A11F38D4B1005571C9 /* AppDelegate.swift */; };
+		F9D5C8A41F38D4B1005571C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5C8A31F38D4B1005571C9 /* ViewController.swift */; };
+		F9D5C8A71F38D4B2005571C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D5C8A51F38D4B2005571C9 /* Main.storyboard */; };
+		F9D5C8A91F38D4B2005571C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D5C8A81F38D4B2005571C9 /* Assets.xcassets */; };
+		F9D5C8AC1F38D4B2005571C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D5C8AA1F38D4B2005571C9 /* LaunchScreen.storyboard */; };
+		F9D5C8B71F38D4B5005571C9 /* The_Trakt_CatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5C8B61F38D4B5005571C9 /* The_Trakt_CatalogTests.swift */; };
+		F9D5C8C21F38D4B6005571C9 /* The_Trakt_CatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5C8C11F38D4B6005571C9 /* The_Trakt_CatalogUITests.swift */; };
+		F9F1923D1F38DE8B00DA97F1 /* ListCatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F1923C1F38DE8B00DA97F1 /* ListCatalogTableViewController.swift */; };
+		F9F1923F1F38DEBA00DA97F1 /* CustomCatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F1923E1F38DEBA00DA97F1 /* CustomCatalogTableViewCell.swift */; };
+		F9F192411F38E18F00DA97F1 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F192401F38E18F00DA97F1 /* RequestData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9D5C8B31F38D4B4005571C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9D5C8961F38D4B1005571C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9D5C89D1F38D4B1005571C9;
+			remoteInfo = "The Trakt Catalog";
+		};
+		F9D5C8BE1F38D4B6005571C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9D5C8961F38D4B1005571C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9D5C89D1F38D4B1005571C9;
+			remoteInfo = "The Trakt Catalog";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FE89F7C48919E353E5F045 /* Pods-The Trakt CatalogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Trakt CatalogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Trakt CatalogUITests/Pods-The Trakt CatalogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0642E1857FA7901BD0808BA1 /* Pods_The_Trakt_Catalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Trakt_Catalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0C93C11194E34A1752EA6D /* Pods-The Trakt CatalogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Trakt CatalogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Trakt CatalogTests/Pods-The Trakt CatalogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25820CEC380868C986C7092B /* Pods-The Trakt Catalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Trakt Catalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Trakt Catalog/Pods-The Trakt Catalog.debug.xcconfig"; sourceTree = "<group>"; };
+		365EA42D00FA2512B740459D /* Pods-The Trakt CatalogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Trakt CatalogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Trakt CatalogTests/Pods-The Trakt CatalogTests.release.xcconfig"; sourceTree = "<group>"; };
+		36A73C514E873FF96B038543 /* Pods_The_Trakt_CatalogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Trakt_CatalogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4113D09E5BB3DB57DD7730 /* Pods-The Trakt Catalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Trakt Catalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Trakt Catalog/Pods-The Trakt Catalog.release.xcconfig"; sourceTree = "<group>"; };
+		734C6ABF567F1D57491A550B /* Pods-The Trakt CatalogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Trakt CatalogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Trakt CatalogUITests/Pods-The Trakt CatalogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF89F3C1F3A8CBF00DABB8C /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FF89F3E1F3A90E100DABB8C /* CollectionDetailsObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDetailsObject.swift; sourceTree = "<group>"; };
+		C51C177FDC499B1781A40D03 /* Pods_The_Trakt_CatalogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Trakt_CatalogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D3A9761F39FFB0000F4BFE /* ListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListObject.swift; sourceTree = "<group>"; };
+		F9D3A97A1F3A2301000F4BFE /* ListDetailsObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailsObject.swift; sourceTree = "<group>"; };
+		F9D3A97C1F3A5526000F4BFE /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
+		F9D5C89E1F38D4B1005571C9 /* The Trakt Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Trakt Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D5C8A11F38D4B1005571C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9D5C8A31F38D4B1005571C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9D5C8A61F38D4B2005571C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9D5C8A81F38D4B2005571C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D5C8AB1F38D4B2005571C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9D5C8AD1F38D4B3005571C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D5C8B21F38D4B4005571C9 /* The Trakt CatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Trakt CatalogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D5C8B61F38D4B5005571C9 /* The_Trakt_CatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Trakt_CatalogTests.swift; sourceTree = "<group>"; };
+		F9D5C8B81F38D4B6005571C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D5C8BD1F38D4B6005571C9 /* The Trakt CatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Trakt CatalogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D5C8C11F38D4B6005571C9 /* The_Trakt_CatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Trakt_CatalogUITests.swift; sourceTree = "<group>"; };
+		F9D5C8C31F38D4B6005571C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F1923C1F38DE8B00DA97F1 /* ListCatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCatalogTableViewController.swift; sourceTree = "<group>"; };
+		F9F1923E1F38DEBA00DA97F1 /* CustomCatalogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCatalogTableViewCell.swift; sourceTree = "<group>"; };
+		F9F192401F38E18F00DA97F1 /* RequestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9D5C89B1F38D4B1005571C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEC2220DF2488FF25BCB33A /* Pods_The_Trakt_Catalog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D5C8AF1F38D4B4005571C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E228671717CBBA92CCB093FB /* Pods_The_Trakt_CatalogTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D5C8BA1F38D4B6005571C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFA5A96A5BDE523B260C118 /* Pods_The_Trakt_CatalogUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ECF40F46A67B73C14B5CDBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25820CEC380868C986C7092B /* Pods-The Trakt Catalog.debug.xcconfig */,
+				3E4113D09E5BB3DB57DD7730 /* Pods-The Trakt Catalog.release.xcconfig */,
+				1D0C93C11194E34A1752EA6D /* Pods-The Trakt CatalogTests.debug.xcconfig */,
+				365EA42D00FA2512B740459D /* Pods-The Trakt CatalogTests.release.xcconfig */,
+				734C6ABF567F1D57491A550B /* Pods-The Trakt CatalogUITests.debug.xcconfig */,
+				02FE89F7C48919E353E5F045 /* Pods-The Trakt CatalogUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBF431A3F9D5FF296EF3EC99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0642E1857FA7901BD0808BA1 /* Pods_The_Trakt_Catalog.framework */,
+				C51C177FDC499B1781A40D03 /* Pods_The_Trakt_CatalogTests.framework */,
+				36A73C514E873FF96B038543 /* Pods_The_Trakt_CatalogUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9D5C8951F38D4B1005571C9 = {
+			isa = PBXGroup;
+			children = (
+				F9D5C8A01F38D4B1005571C9 /* The Trakt Catalog */,
+				F9D5C8B51F38D4B4005571C9 /* The Trakt CatalogTests */,
+				F9D5C8C01F38D4B6005571C9 /* The Trakt CatalogUITests */,
+				F9D5C89F1F38D4B1005571C9 /* Products */,
+				4ECF40F46A67B73C14B5CDBC /* Pods */,
+				EBF431A3F9D5FF296EF3EC99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9D5C89F1F38D4B1005571C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5C89E1F38D4B1005571C9 /* The Trakt Catalog.app */,
+				F9D5C8B21F38D4B4005571C9 /* The Trakt CatalogTests.xctest */,
+				F9D5C8BD1F38D4B6005571C9 /* The Trakt CatalogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9D5C8A01F38D4B1005571C9 /* The Trakt Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				F9F1923B1F38DBB900DA97F1 /* View */,
+				F9F1923A1F38DBB200DA97F1 /* ViewModel */,
+				F9F192381F38DB9900DA97F1 /* Model */,
+				F9D5C8A11F38D4B1005571C9 /* AppDelegate.swift */,
+				F9D5C8A31F38D4B1005571C9 /* ViewController.swift */,
+				F9D5C8A51F38D4B2005571C9 /* Main.storyboard */,
+				F9D5C8A81F38D4B2005571C9 /* Assets.xcassets */,
+				F9D5C8AA1F38D4B2005571C9 /* LaunchScreen.storyboard */,
+				F9D5C8AD1F38D4B3005571C9 /* Info.plist */,
+			);
+			path = "The Trakt Catalog";
+			sourceTree = "<group>";
+		};
+		F9D5C8B51F38D4B4005571C9 /* The Trakt CatalogTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5C8B61F38D4B5005571C9 /* The_Trakt_CatalogTests.swift */,
+				F9D5C8B81F38D4B6005571C9 /* Info.plist */,
+			);
+			path = "The Trakt CatalogTests";
+			sourceTree = "<group>";
+		};
+		F9D5C8C01F38D4B6005571C9 /* The Trakt CatalogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5C8C11F38D4B6005571C9 /* The_Trakt_CatalogUITests.swift */,
+				F9D5C8C31F38D4B6005571C9 /* Info.plist */,
+			);
+			path = "The Trakt CatalogUITests";
+			sourceTree = "<group>";
+		};
+		F9F192381F38DB9900DA97F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9D3A9761F39FFB0000F4BFE /* ListObject.swift */,
+				F9D3A97A1F3A2301000F4BFE /* ListDetailsObject.swift */,
+				7FF89F3E1F3A90E100DABB8C /* CollectionDetailsObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9F1923A1F38DBB200DA97F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9F1923C1F38DE8B00DA97F1 /* ListCatalogTableViewController.swift */,
+				F9D3A97C1F3A5526000F4BFE /* DetailsMovieViewController.swift */,
+				F9F192401F38E18F00DA97F1 /* RequestData.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9F1923B1F38DBB900DA97F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9F1923E1F38DEBA00DA97F1 /* CustomCatalogTableViewCell.swift */,
+				7FF89F3C1F3A8CBF00DABB8C /* ListCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9D5C89D1F38D4B1005571C9 /* The Trakt Catalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D5C8C61F38D4B6005571C9 /* Build configuration list for PBXNativeTarget "The Trakt Catalog" */;
+			buildPhases = (
+				C40B7832B1B0C24F794E897D /* [CP] Check Pods Manifest.lock */,
+				F9D5C89A1F38D4B1005571C9 /* Sources */,
+				F9D5C89B1F38D4B1005571C9 /* Frameworks */,
+				F9D5C89C1F38D4B1005571C9 /* Resources */,
+				829C5F154B61F0FED2ADB1C2 /* [CP] Embed Pods Frameworks */,
+				8017998259B6CA2B74A2B7A0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Trakt Catalog";
+			productName = "The Trakt Catalog";
+			productReference = F9D5C89E1F38D4B1005571C9 /* The Trakt Catalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9D5C8B11F38D4B4005571C9 /* The Trakt CatalogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D5C8C91F38D4B6005571C9 /* Build configuration list for PBXNativeTarget "The Trakt CatalogTests" */;
+			buildPhases = (
+				5C0F84999B583B28A560E88F /* [CP] Check Pods Manifest.lock */,
+				F9D5C8AE1F38D4B4005571C9 /* Sources */,
+				F9D5C8AF1F38D4B4005571C9 /* Frameworks */,
+				F9D5C8B01F38D4B4005571C9 /* Resources */,
+				4E45E273E60B4564643960D7 /* [CP] Embed Pods Frameworks */,
+				5F786AF7B1E4B2FEB3432C82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D5C8B41F38D4B4005571C9 /* PBXTargetDependency */,
+			);
+			name = "The Trakt CatalogTests";
+			productName = "The Trakt CatalogTests";
+			productReference = F9D5C8B21F38D4B4005571C9 /* The Trakt CatalogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9D5C8BC1F38D4B6005571C9 /* The Trakt CatalogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D5C8CC1F38D4B6005571C9 /* Build configuration list for PBXNativeTarget "The Trakt CatalogUITests" */;
+			buildPhases = (
+				EC555E66FEDBD872B922D6FE /* [CP] Check Pods Manifest.lock */,
+				F9D5C8B91F38D4B6005571C9 /* Sources */,
+				F9D5C8BA1F38D4B6005571C9 /* Frameworks */,
+				F9D5C8BB1F38D4B6005571C9 /* Resources */,
+				B6D3E9EAE577DB2DD4F0F91C /* [CP] Embed Pods Frameworks */,
+				1AE87F66735227521A61DB8B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D5C8BF1F38D4B6005571C9 /* PBXTargetDependency */,
+			);
+			name = "The Trakt CatalogUITests";
+			productName = "The Trakt CatalogUITests";
+			productReference = F9D5C8BD1F38D4B6005571C9 /* The Trakt CatalogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9D5C8961F38D4B1005571C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = fabricio;
+				TargetAttributes = {
+					F9D5C89D1F38D4B1005571C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 88JC4FYMN2;
+						ProvisioningStyle = Automatic;
+					};
+					F9D5C8B11F38D4B4005571C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9D5C89D1F38D4B1005571C9;
+					};
+					F9D5C8BC1F38D4B6005571C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9D5C89D1F38D4B1005571C9;
+					};
+				};
+			};
+			buildConfigurationList = F9D5C8991F38D4B1005571C9 /* Build configuration list for PBXProject "The Trakt Catalog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9D5C8951F38D4B1005571C9;
+			productRefGroup = F9D5C89F1F38D4B1005571C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9D5C89D1F38D4B1005571C9 /* The Trakt Catalog */,
+				F9D5C8B11F38D4B4005571C9 /* The Trakt CatalogTests */,
+				F9D5C8BC1F38D4B6005571C9 /* The Trakt CatalogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9D5C89C1F38D4B1005571C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D5C8AC1F38D4B2005571C9 /* LaunchScreen.storyboard in Resources */,
+				F9D5C8A91F38D4B2005571C9 /* Assets.xcassets in Resources */,
+				F9D5C8A71F38D4B2005571C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D5C8B01F38D4B4005571C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D5C8BB1F38D4B6005571C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AE87F66735227521A61DB8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Trakt CatalogUITests/Pods-The Trakt CatalogUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E45E273E60B4564643960D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Trakt CatalogTests/Pods-The Trakt CatalogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C0F84999B583B28A560E88F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F786AF7B1E4B2FEB3432C82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Trakt CatalogTests/Pods-The Trakt CatalogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8017998259B6CA2B74A2B7A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Trakt Catalog/Pods-The Trakt Catalog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		829C5F154B61F0FED2ADB1C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Trakt Catalog/Pods-The Trakt Catalog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D3E9EAE577DB2DD4F0F91C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Trakt CatalogUITests/Pods-The Trakt CatalogUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C40B7832B1B0C24F794E897D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC555E66FEDBD872B922D6FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9D5C89A1F38D4B1005571C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F1923F1F38DEBA00DA97F1 /* CustomCatalogTableViewCell.swift in Sources */,
+				7FF89F3F1F3A90E100DABB8C /* CollectionDetailsObject.swift in Sources */,
+				F9F192411F38E18F00DA97F1 /* RequestData.swift in Sources */,
+				F9D3A97B1F3A2301000F4BFE /* ListDetailsObject.swift in Sources */,
+				F9D3A9771F39FFB0000F4BFE /* ListObject.swift in Sources */,
+				F9D5C8A41F38D4B1005571C9 /* ViewController.swift in Sources */,
+				7FF89F3D1F3A8CBF00DABB8C /* ListCollectionViewCell.swift in Sources */,
+				F9D5C8A21F38D4B1005571C9 /* AppDelegate.swift in Sources */,
+				F9D3A97D1F3A5526000F4BFE /* DetailsMovieViewController.swift in Sources */,
+				F9F1923D1F38DE8B00DA97F1 /* ListCatalogTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D5C8AE1F38D4B4005571C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D5C8B71F38D4B5005571C9 /* The_Trakt_CatalogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D5C8B91F38D4B6005571C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D5C8C21F38D4B6005571C9 /* The_Trakt_CatalogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9D5C8B41F38D4B4005571C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9D5C89D1F38D4B1005571C9 /* The Trakt Catalog */;
+			targetProxy = F9D5C8B31F38D4B4005571C9 /* PBXContainerItemProxy */;
+		};
+		F9D5C8BF1F38D4B6005571C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9D5C89D1F38D4B1005571C9 /* The Trakt Catalog */;
+			targetProxy = F9D5C8BE1F38D4B6005571C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9D5C8A51F38D4B2005571C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D5C8A61F38D4B2005571C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9D5C8AA1F38D4B2005571C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D5C8AB1F38D4B2005571C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9D5C8C41F38D4B6005571C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9D5C8C51F38D4B6005571C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9D5C8C71F38D4B6005571C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25820CEC380868C986C7092B /* Pods-The Trakt Catalog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88JC4FYMN2;
+				INFOPLIST_FILE = "The Trakt Catalog/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.fabricio.The-Trakt-Catalog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9D5C8C81F38D4B6005571C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4113D09E5BB3DB57DD7730 /* Pods-The Trakt Catalog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88JC4FYMN2;
+				INFOPLIST_FILE = "The Trakt Catalog/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.fabricio.The-Trakt-Catalog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F9D5C8CA1F38D4B6005571C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0C93C11194E34A1752EA6D /* Pods-The Trakt CatalogTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Trakt CatalogTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.fabricio.The-Trakt-CatalogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Trakt Catalog.app/The Trakt Catalog";
+			};
+			name = Debug;
+		};
+		F9D5C8CB1F38D4B6005571C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365EA42D00FA2512B740459D /* Pods-The Trakt CatalogTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Trakt CatalogTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.fabricio.The-Trakt-CatalogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Trakt Catalog.app/The Trakt Catalog";
+			};
+			name = Release;
+		};
+		F9D5C8CD1F38D4B6005571C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734C6ABF567F1D57491A550B /* Pods-The Trakt CatalogUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "The Trakt CatalogUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.fabricio.The-Trakt-CatalogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "The Trakt Catalog";
+			};
+			name = Debug;
+		};
+		F9D5C8CE1F38D4B6005571C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FE89F7C48919E353E5F045 /* Pods-The Trakt CatalogUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "The Trakt CatalogUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.fabricio.The-Trakt-CatalogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "The Trakt Catalog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9D5C8991F38D4B1005571C9 /* Build configuration list for PBXProject "The Trakt Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D5C8C41F38D4B6005571C9 /* Debug */,
+				F9D5C8C51F38D4B6005571C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D5C8C61F38D4B6005571C9 /* Build configuration list for PBXNativeTarget "The Trakt Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D5C8C71F38D4B6005571C9 /* Debug */,
+				F9D5C8C81F38D4B6005571C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D5C8C91F38D4B6005571C9 /* Build configuration list for PBXNativeTarget "The Trakt CatalogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D5C8CA1F38D4B6005571C9 /* Debug */,
+				F9D5C8CB1F38D4B6005571C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D5C8CC1F38D4B6005571C9 /* Build configuration list for PBXNativeTarget "The Trakt CatalogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D5C8CD1F38D4B6005571C9 /* Debug */,
+				F9D5C8CE1F38D4B6005571C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9D5C8961F38D4B1005571C9 /* Project object */;
+}
